@@ -1,0 +1,1590 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Book1_16922136727620' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='airplane_crash' inline='true' name='federated.0enjtnd0ammkgk1azz61o09tuf1p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='airplane_crash' name='textscan.0evwnt10uk7p861ahl6lc0pvh0s8'>
+            <connection class='textscan' directory='C:/Users/dwara/Downloads' filename='airplane_crash.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0evwnt10uk7p861ahl6lc0pvh0s8' name='airplane_crash.csv' table='[airplane_crash#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Location' ordinal='1' />
+            <column datatype='string' name='Operator' ordinal='2' />
+            <column datatype='string' name='Route' ordinal='3' />
+            <column datatype='string' name='Type' ordinal='4' />
+            <column datatype='integer' name='Aboard' ordinal='5' />
+            <column datatype='integer' name='Fatalities' ordinal='6' />
+            <column datatype='integer' name='Ground' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0evwnt10uk7p861ahl6lc0pvh0s8' name='airplane_crash.csv' table='[airplane_crash#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Location' ordinal='1' />
+            <column datatype='string' name='Operator' ordinal='2' />
+            <column datatype='string' name='Route' ordinal='3' />
+            <column datatype='string' name='Type' ordinal='4' />
+            <column datatype='integer' name='Aboard' ordinal='5' />
+            <column datatype='integer' name='Fatalities' ordinal='6' />
+            <column datatype='integer' name='Ground' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Operator]</local-name>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias>Operator</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Route</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Route]</local-name>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias>Route</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aboard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aboard]</local-name>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias>Aboard</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fatalities]</local-name>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias>Fatalities</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ground</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ground]</local-name>
+            <parent-name>[airplane_crash.csv]</parent-name>
+            <remote-alias>Ground</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Aboard]' role='measure' type='quantitative' />
+      <column caption='negative' datatype='integer' name='[Calculation_941815331426426892]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='-COUNT([__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D])' />
+      </column>
+      <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Ground]' role='measure' type='quantitative' />
+      <column caption='Location - Split 1' datatype='string' name='[Location - Split 1]' role='dimension' semantic-role='[Country].[Name]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Location]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Location], &quot;,&quot;, -1 ) )' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='airplane_crash.csv' datatype='table' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Location - Split 1]' derivation='None' name='[none:Location - Split 1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Aboard]' derivation='Sum' name='[sum:Aboard:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fatalities]' derivation='Sum' name='[sum:Fatalities:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Ground]' derivation='Sum' name='[sum:Ground:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='D:/DWARAK/smart internz/Airplane crash_analysis/airplane_crash.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/16/2023 07:19:42 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='airplane_crash' increment-value='%null%' refresh-type='create' rows-inserted='5268' timestamp-start='2023-08-16 19:19:41.602' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>airplane_crash.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2921</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>1</ordinal>
+              <family>airplane_crash.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2643</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Operator</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Operator]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Operator</remote-alias>
+              <ordinal>2</ordinal>
+              <family>airplane_crash.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1422</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Route</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Route]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Route</remote-alias>
+              <ordinal>3</ordinal>
+              <family>airplane_crash.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2468</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>airplane_crash.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1445</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aboard</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Aboard]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aboard</remote-alias>
+              <ordinal>5</ordinal>
+              <family>airplane_crash.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>211</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fatalities</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fatalities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fatalities</remote-alias>
+              <ordinal>6</ordinal>
+              <family>airplane_crash.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ground</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ground]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ground</remote-alias>
+              <ordinal>7</ordinal>
+              <family>airplane_crash.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='traffic_light_10_0' type='palette'>
+            <map to='#309143'>
+              <bucket>&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Ground:qk]&quot;</bucket>
+            </map>
+            <map to='#e03531'>
+              <bucket>&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Fatalities:qk]&quot;</bucket>
+            </map>
+            <map to='#e39802'>
+              <bucket>&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]&quot;</bucket>
+            </map>
+            <map to='#ffda66'>
+              <bucket>&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Aboard:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Location - Split 1:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;England&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='Location' />
+        <field-sort-custom-order field='Operator' />
+        <field-sort-custom-order field='Route' />
+        <field-sort-custom-order field='Type' />
+        <field-sort-custom-order field='Aboard' />
+        <field-sort-custom-order field='Fatalities' />
+        <field-sort-custom-order field='Ground' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Location - Split 1' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='airplane_crash.csv' id='airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D'>
+            <properties context=''>
+              <relation connection='textscan.0evwnt10uk7p861ahl6lc0pvh0s8' name='airplane_crash.csv' table='[airplane_crash#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='Location' ordinal='1' />
+                  <column datatype='string' name='Operator' ordinal='2' />
+                  <column datatype='string' name='Route' ordinal='3' />
+                  <column datatype='string' name='Type' ordinal='4' />
+                  <column datatype='integer' name='Aboard' ordinal='5' />
+                  <column datatype='integer' name='Fatalities' ordinal='6' />
+                  <column datatype='integer' name='Ground' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Accidents Based on regions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Accidents Based on regions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='airplane_crash' name='federated.0enjtnd0ammkgk1azz61o09tuf1p' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0enjtnd0ammkgk1azz61o09tuf1p'>
+            <column caption='Location - Split 1' datatype='string' name='[Location - Split 1]' role='dimension' semantic-role='[Country].[Name]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='airplane_crash.csv' datatype='integer' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='airplane_crash.csv' datatype='table' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Location - Split 1]' derivation='None' name='[none:Location - Split 1:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+              <text column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]' />
+              <text column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+              <lod column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]' />
+              <geometry column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Latitude (generated)]</rows>
+        <cols>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{520FF12C-96E8-4FB7-9341-438431403B64}' />
+    </worksheet>
+    <worksheet name='Accidents Happened in 1972 based on months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Accidents Happened in 1972 based on months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='airplane_crash' name='federated.0enjtnd0ammkgk1azz61o09tuf1p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0enjtnd0ammkgk1azz61o09tuf1p'>
+            <column datatype='integer' name='[Aboard]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Ground]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Aboard]' derivation='Sum' name='[sum:Aboard:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fatalities]' derivation='Sum' name='[sum:Fatalities:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ground]' derivation='Sum' name='[sum:Ground:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Aboard:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Fatalities:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Ground:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[yr:Date:ok]'>
+            <groupfilter function='member' level='[yr:Date:ok]' member='1972' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[yr:Date:ok]</column>
+            <column>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Multiple Values]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Multiple Values]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0enjtnd0ammkgk1azz61o09tuf1p].[Multiple Values] + [federated.0enjtnd0ammkgk1azz61o09tuf1p].[Multiple Values])</rows>
+        <cols>([federated.0enjtnd0ammkgk1azz61o09tuf1p].[mn:Date:ok] / [federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{78010E31-B289-4853-9B38-523D3DDABCA3}' />
+    </worksheet>
+    <worksheet name='Comparing Aboard vs Fatalities vs Ground'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>                        Comparing Aboard vs Fatalities vs Ground</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='airplane_crash' name='federated.0enjtnd0ammkgk1azz61o09tuf1p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0enjtnd0ammkgk1azz61o09tuf1p'>
+            <column datatype='integer' name='[Aboard]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Ground]' role='measure' type='quantitative' />
+            <column-instance column='[Aboard]' derivation='Sum' name='[sum:Aboard:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fatalities]' derivation='Sum' name='[sum:Fatalities:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ground]' derivation='Sum' name='[sum:Ground:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Aboard:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Fatalities:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0enjtnd0ammkgk1azz61o09tuf1p].[sum:Ground:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' />
+              <text column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' />
+              <lod column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='196' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Multiple Values]</rows>
+        <cols>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{FB7F41C8-CCAB-4EBF-BC97-2B52A27B8D7C}' />
+    </worksheet>
+    <worksheet name='Highest Number of accidents happened by operators'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Highest Number of accidents happened by operators    </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='airplane_crash' name='federated.0enjtnd0ammkgk1azz61o09tuf1p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0enjtnd0ammkgk1azz61o09tuf1p'>
+            <_.fcp.ObjectModelTableType.false...column caption='airplane_crash.csv' datatype='integer' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Operator]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='airplane_crash.csv' datatype='table' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Operator]' derivation='None' name='[none:Operator:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Operator:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Operator:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Operator:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Operator:nk]' />
+              <wedge-size column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+              <size column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+              <text column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Operator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{52316D64-CDB0-40C2-BD16-872B41121634}' />
+    </worksheet>
+    <worksheet name='Max Accidents Based on Years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Max Accidents Based on Years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='airplane_crash' name='federated.0enjtnd0ammkgk1azz61o09tuf1p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0enjtnd0ammkgk1azz61o09tuf1p'>
+            <_.fcp.ObjectModelTableType.false...column caption='airplane_crash.csv' datatype='integer' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='airplane_crash.csv' datatype='table' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+              <color column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+              <text column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[yr:Date:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5C4EFFFF-663E-4049-8099-57F0E23D22DB}' />
+    </worksheet>
+    <worksheet name='Top 10 Locations Which had more Accidents'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Top 10 Locations Which had more Accidents</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='airplane_crash' name='federated.0enjtnd0ammkgk1azz61o09tuf1p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0enjtnd0ammkgk1azz61o09tuf1p'>
+            <column caption='Location - Split 1' datatype='string' name='[Location - Split 1]' role='dimension' semantic-role='[Country].[Name]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Location]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Location], &quot;,&quot;, -1 ) )' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='airplane_crash.csv' datatype='integer' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='airplane_crash.csv' datatype='table' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Location - Split 1]' derivation='None' name='[none:Location - Split 1:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Location - Split 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]' direction='DESC' using='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+          <slices>
+            <column>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#000000' />
+                <format attr='size' value='0.43878453969955444' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk] + [federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk])</rows>
+        <cols>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]</cols>
+      </table>
+      <simple-id uuid='{3768768C-9917-4741-91F4-2A32B7C8DAFE}' />
+    </worksheet>
+    <worksheet name='Top 3 flights which have max Accident History'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Top 3 flights which have max Accident History</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='airplane_crash' name='federated.0enjtnd0ammkgk1azz61o09tuf1p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0enjtnd0ammkgk1azz61o09tuf1p'>
+            <column caption='negative' datatype='integer' name='[Calculation_941815331426426892]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='-COUNT([__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D])' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='airplane_crash.csv' datatype='integer' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='airplane_crash.csv' datatype='table' name='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_941815331426426892]' derivation='User' name='[usr:Calculation_941815331426426892:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Type:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Type:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Type:nk]' direction='ASC' using='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+          <slices>
+            <column>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <text column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#97c824' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[usr:Calculation_941815331426426892:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <text column='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#c0c0c0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk] + [federated.0enjtnd0ammkgk1azz61o09tuf1p].[usr:Calculation_941815331426426892:qk])</rows>
+        <cols>[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Type:nk]</cols>
+      </table>
+      <simple-id uuid='{C0657FD6-F15B-42FE-8E1D-DD6E62B7B27B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97644' id='7' param='horz' type-v2='layout-flow' w='98792' x='604' y='1178'>
+            <zone h='97644' id='5' type-v2='layout-basic' w='86717' x='604' y='1178'>
+              <zone h='48820' id='3' name='Max Accidents Based on Years' w='43357' x='604' y='1178'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48824' id='9' name='Top 10 Locations Which had more Accidents' w='86717' x='604' y='49998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48820' id='11' name='Highest Number of accidents happened by operators' w='43360' x='43961' y='1178'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97644' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12075' x='87321' y='1178'>
+              <zone h='9573' id='8' name='Max Accidents Based on Years' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type-v2='color' w='12075' x='87321' y='1178'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='33284' id='10' name='Top 10 Locations Which had more Accidents' pane-specification-id='1' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]' type-v2='color' w='12075' x='87321' y='10751'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18556' id='12' name='Highest Number of accidents happened by operators' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Operator:nk]' type-v2='color' w='12075' x='87321' y='44035'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6774' id='13' name='Highest Number of accidents happened by operators' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type-v2='size' w='12075' x='87321' y='62591'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7658' id='14' type-v2='dashboard-object' w='12377' x='74792' y='8542'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{D1479B82-2C45-4999-B27E-C72F587BF7CE}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Next</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='19' param='vert' type-v2='layout-flow' w='98792' x='604' y='1178'>
+                <zone fixed-size='280' h='48820' id='3' is-fixed='true' name='Max Accidents Based on Years' w='43357' x='604' y='1178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9573' id='8' name='Max Accidents Based on Years' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type-v2='color' w='12075' x='87321' y='1178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48820' id='11' is-fixed='true' name='Highest Number of accidents happened by operators' w='43360' x='43961' y='1178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18556' id='12' name='Highest Number of accidents happened by operators' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Operator:nk]' type-v2='color' w='12075' x='87321' y='44035'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6774' id='13' name='Highest Number of accidents happened by operators' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type-v2='size' w='12075' x='87321' y='62591'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7658' id='14' type-v2='dashboard-object' w='12377' x='74792' y='8542'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{D1479B82-2C45-4999-B27E-C72F587BF7CE}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Next</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48824' id='9' is-fixed='true' name='Top 10 Locations Which had more Accidents' w='86717' x='604' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='33284' id='10' name='Top 10 Locations Which had more Accidents' pane-specification-id='1' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]' type-v2='color' w='12075' x='87321' y='10751'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{097895FB-A3D1-4AA5-939E-1F3750F1BDFC}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97644' id='7' param='horz' type-v2='layout-flow' w='98792' x='604' y='1178'>
+            <zone h='97644' id='5' type-v2='layout-basic' w='86717' x='604' y='1178'>
+              <zone h='48822' id='3' name='Accidents Based on regions' w='43361' x='43960' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48822' id='9' name='Top 3 flights which have max Accident History' w='43356' x='604' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48822' id='10' name='Comparing Aboard vs Fatalities vs Ground' w='43356' x='604' y='1178'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48822' id='12' name='Accidents Happened in 1972 based on months' w='43361' x='43960' y='1178'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97644' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12075' x='87321' y='1178'>
+              <zone h='9573' id='8' name='Accidents Based on regions' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type-v2='color' w='12075' x='87321' y='1178'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12665' id='11' name='Comparing Aboard vs Fatalities vs Ground' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' type-v2='color' w='12075' x='87321' y='10751'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7658' id='13' type-v2='dashboard-object' w='12377' x='88377' y='30191'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{9C3057CC-BE50-466F-B027-EF0948E252F2}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Prev</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='18' param='vert' type-v2='layout-flow' w='98792' x='604' y='1178'>
+                <zone fixed-size='280' h='48822' id='10' is-fixed='true' name='Comparing Aboard vs Fatalities vs Ground' w='43356' x='604' y='1178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12665' id='11' name='Comparing Aboard vs Fatalities vs Ground' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' type-v2='color' w='12075' x='87321' y='10751'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48822' id='12' is-fixed='true' name='Accidents Happened in 1972 based on months' w='43361' x='43960' y='1178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7658' id='13' type-v2='dashboard-object' w='12377' x='88377' y='30191'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{9C3057CC-BE50-466F-B027-EF0948E252F2}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Prev</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48822' id='9' is-fixed='true' name='Top 3 flights which have max Accident History' w='43356' x='604' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48822' id='3' is-fixed='true' name='Accidents Based on regions' w='43361' x='43960' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9573' id='8' name='Accidents Based on regions' pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type-v2='color' w='12075' x='87321' y='1178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C53419B4-1D0C-4DB0-BCF4-31F4886C26E4}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='9' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='In the year of 1972 max accidents occured' captured-sheet='Max Accidents Based on Years' id='1' />
+                  <story-point caption='Comparing Aboard vs Fatalities vs Ground' captured-sheet='Comparing Aboard vs Fatalities vs Ground' id='2' />
+                  <story-point caption='Accidents Happened in 1972 based on months' captured-sheet='Accidents Happened in 1972 based on months' id='3' />
+                  <story-point caption='Highest Number of accidents happened by operators' captured-sheet='Highest Number of accidents happened by operators' id='4' />
+                  <story-point caption='Top 10 Locations Which had more Accidents' captured-sheet='Top 10 Locations Which had more Accidents' id='5' />
+                  <story-point caption='Top 3 flights which have max Accident History' captured-sheet='Top 3 flights which have max Accident History' id='6' />
+                  <story-point caption='Accidents Based on regions' captured-sheet='Accidents Based on regions' id='7' />
+                  <story-point caption='Dashboard 1' captured-sheet='Dashboard 1' id='8' />
+                  <story-point caption='Dashboard 2' captured-sheet='Dashboard 2' id='9'>
+                    <currentDeltas>
+                      <worksheet name='Accidents Based on regions'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Latitude (generated)]' field-type='quantitative' max='17250066.527320385' min='-16989564.595210627' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[Longitude (generated)]' field-type='quantitative' max='27130376.587612242' min='-12634957.866525983' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </currentDeltas>
+                    <capturedDeltas />
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{F7A2B701-9546-4371-BA14-16BF7F27ED61}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Comparing Aboard vs Fatalities vs Ground'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E854D46A-A46A-4239-898A-6E1D93CC2A28}' />
+    </window>
+    <window class='worksheet' name='Max Accidents Based on Years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{690C0A57-0169-43BF-A333-4708FF357ABB}' />
+    </window>
+    <window class='worksheet' name='Accidents Happened in 1972 based on months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DA5271E5-0893-44DC-B4D4-C958AB00DD10}' />
+    </window>
+    <window class='worksheet' name='Highest Number of accidents happened by operators'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Operator:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{14C7DA1B-B51E-49CB-BCF3-3515C4BF6A98}' />
+    </window>
+    <window class='worksheet' name='Top 10 Locations Which had more Accidents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[none:Location - Split 1:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F4575DCB-69FB-4291-B2BC-77C7EF243A83}' />
+    </window>
+    <window class='worksheet' name='Top 3 flights which have max Accident History'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6C40848F-2356-440C-ACB9-BCA767B7871A}' />
+    </window>
+    <window class='worksheet' name='Accidents Based on regions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0enjtnd0ammkgk1azz61o09tuf1p].[__tableau_internal_object_id__].[cnt:airplane_crash.csv_2F210DABFBF44E2E9617E2EC2AF14B5D:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4AF16E8-A0C9-4CE5-B425-B7CECB1C8A5D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Highest Number of accidents happened by operators'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Max Accidents Based on Years' />
+        <viewpoint name='Top 10 Locations Which had more Accidents'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{9C3057CC-BE50-466F-B027-EF0948E252F2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Accidents Based on regions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Accidents Happened in 1972 based on months'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Comparing Aboard vs Fatalities vs Ground'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 3 flights which have max Accident History'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{D1479B82-2C45-4999-B27E-C72F587BF7CE}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{8C3F5FEA-856C-4E77-8D98-212EA809A295}' />
+    </window>
+  </windows>
+</workbook>
